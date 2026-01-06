@@ -1,4 +1,4 @@
-# Day X – 50 Days of Code
+# Day 1 – 50 Days of Code
 
  Date: 06-01-2026
 
@@ -7,7 +7,7 @@
 ##  DSA Questions Solved
 - [Selection sort](https://www.geeksforgeeks.org/problems/selection-sort/1)
 - [Bubble sort](https://www.geeksforgeeks.org/problems/bubble-sort/1)
-- [Insertion sort] - 
+- [Insertion sort](https://www.geeksforgeeks.org/problems/insertion-sort/1)
 
 
 ####  C++ Code
@@ -41,6 +41,22 @@ void bubbleSort(vector<int>& arr) {
                    arr[j]=temp;
                 }
             }
+        }
+    }
+```
+Insertion Sort:
+``` cpp
+void insertionSort(vector<int>& arr) {
+        int n =arr.size();
+        int j;
+        for(int i=1;i<n;i++){
+            j=i-1;
+            int key=arr[i];
+            while(j>=0 && arr[j]>key){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1]=key;
         }
     }
 ```
