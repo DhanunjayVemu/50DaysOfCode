@@ -5,11 +5,12 @@
 ---
 
 ##  DSA Questions Solved
-Selection sort - https://www.geeksforgeeks.org/problems/selection-sort/1
-Bubble sort - 
+- Selection sort - https://www.geeksforgeeks.org/problems/selection-sort/1
+- Bubble sort - 
 
 
 ####  C++ Code
+Selection Sort:
 ```cpp
 int n=arr.size();
         int min_idx, temp;
