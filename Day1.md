@@ -5,9 +5,9 @@
 ---
 
 ##  DSA Questions Solved
-- Selection sort - https://www.geeksforgeeks.org/problems/selection-sort/1
-- Bubble sort - https://www.geeksforgeeks.org/problems/bubble-sort/1
-- Insertion sort - 
+- [Selection sort](https://www.geeksforgeeks.org/problems/selection-sort/1)
+- [Bubble sort](https://www.geeksforgeeks.org/problems/bubble-sort/1)
+- [Insertion sort] - 
 
 
 ####  C++ Code
@@ -26,6 +26,7 @@ Selection Sort:
             arr[i]=temp;
         }
     }
+```
 
 Bubble Sort:
 ``` cpp
@@ -42,3 +43,4 @@ void bubbleSort(vector<int>& arr) {
             }
         }
     }
+```
