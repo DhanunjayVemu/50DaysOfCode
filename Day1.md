@@ -1,6 +1,6 @@
 # Day 1 – 50 Days of Code
 
- Date: 06-01-2026
+ Date: 07-01-2026
 
 ---
 
@@ -60,7 +60,7 @@ void insertionSort(vector<int>& arr) {
         }
     }
 ```
-Mergge Sort:
+Merge Sort:
 ```cpp
 void mergeSort(vector<int>& arr, int l, int r) {
         if(l==r) return;
@@ -97,5 +97,40 @@ void mergeSort(vector<int>& arr, int l, int r) {
         for(int i=l; i<=r; i++){
             arr[i] = temp[i-l];
             }
+    }
+```
+
+Quick sort:
+```cpp
+
+void quickSort(vector<int>& arr, int low, int high) {
+        
+        if(low<high){
+            int pivotidx=partition(arr, low, high);
+            quickSort(arr, low, pivotidx-1);
+            quickSort(arr, pivotidx+1, high);
+        }
+    }
+
+int partition(vector<int>& arr, int low, int high) {
+        int pivot=arr[low];
+        int i=low;
+        int j=high;
+        
+    while(i<j){
+    
+        while(arr[i]<=pivot && i<high){
+            i++;
+        }
+        
+        while(arr[j]>pivot && j>low){
+            j--;
+        }
+        if(i<j) swap(arr[i],arr[j]);
+    }
+        swap(arr[low], arr[j]);
+        return j;
+        
+        
     }
 ```
