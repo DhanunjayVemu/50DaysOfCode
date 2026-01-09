@@ -1,4 +1,4 @@
-# Day 2 – 50 Days of Code
+# Day 3 – 50 Days of Code
 
  Date: 09-01-2026
 
