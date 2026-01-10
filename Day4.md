@@ -1,4 +1,4 @@
-# Day  – 50 Days of Code
+# Day 4 – 50 Days of Code
 
  Date: 10-01-2026
 
