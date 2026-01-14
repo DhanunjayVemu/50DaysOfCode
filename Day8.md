@@ -36,7 +36,9 @@ int longestSubarray(vector<int>& arr, int k) {
 ```
 
 [2 sum]
+
 Brute force: Used two 'for' loops, and iterating over each pair of elements in the array.
+
 Optimal: Used an unordered map to hash the number and its index, then searched for the difference between the target value and the current value 'i' is pointing at in the hash table, if its present then that is the answer or else I added the pair to the hash table for further checks.
 
 ``` cpp
