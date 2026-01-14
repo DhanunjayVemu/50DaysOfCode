@@ -32,7 +32,8 @@ int longestSubarray(vector<int>& arr, int k) {
             }
             return maxlen; 
     }
-    ```
+
+```
 
 [2 sum]
 Brute force: Used two 'for' loops, and iterating over each pair of elements in the array.
@@ -52,4 +53,5 @@ Optimal: Used an unordered map to hash the number and its index, then searched f
         }
         return {-1,-1};
     }
+
 ```
