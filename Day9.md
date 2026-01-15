@@ -5,7 +5,7 @@
 ---
 
 ##  DSA Questions Solved
-- [sort-colors] (https://leetcode.com/problems/sort-colors/)
+- [sort-colors](https://leetcode.com/problems/sort-colors/)
 - [Majority Element](https://leetcode.com/problems/majority-element/)
 
 ####  C++ Code
