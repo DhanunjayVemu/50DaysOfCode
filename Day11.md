@@ -10,6 +10,7 @@
 ####  C++ Code
 Best time to buy and sell stock
 
+I somehow needed to maintain the minimum price of a day while searching for the day with the largest price. So, I took the cost for each price compared to the minimum element iterated so far, and kept on updating the minimum value and the profit as the loop covers all elements.
 ```cpp
  int maxProfit(vector<int>& prices) {
         int n=prices.size();
