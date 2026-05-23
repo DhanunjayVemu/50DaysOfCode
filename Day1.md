@@ -28,10 +28,10 @@ Selection Sort:
         }
     }
 ```
-BTC (Best-case Time Complexity): O(n^2);
-ATC (Average Time complexity): O(n^2);
-WTC (Worst-case Time Complexity): O(n^2);
-SC (Space Complexity): O(1); [In-place Algo]
+BTC (Best-case Time Complexity): O(n^2);  
+ATC (Average Time complexity): O(n^2);  
+WTC (Worst-case Time Complexity): O(n^2);  
+SC (Space Complexity): O(1); [In-place Algo]  
 
 Bubble Sort:
 ``` cpp
@@ -49,7 +49,7 @@ void bubbleSort(vector<int>& arr) {
         }
     }
 ```
-BTC: O(n^2);
+BTC: O(n^2);  
 (optimized bubble sort:)
 ```cpp
 void bubbleSort(int arr[], int n) {
@@ -67,10 +67,10 @@ void bubbleSort(int arr[], int n) {
     }
 }
 ``` 
-BTC: O(n);
-ATC: O(n^2);
-WTC: O(n^2);
-SC: O(1);
+BTC: O(n);  
+ATC: O(n^2);  
+WTC: O(n^2);  
+SC: O(1);  
 
 Insertion Sort:
 ``` cpp
@@ -102,10 +102,10 @@ void insertionSort(vector<int>& arr) {
         }
     }
 ```
-BTC: O(n);
-ATC: O(n^2);
-WTC: O(n^2);
-SC: O(1);
+BTC: O(n);  
+ATC: O(n^2);  
+WTC: O(n^2);  
+SC: O(1);  
 
 Merge Sort:
 ```cpp
@@ -146,10 +146,10 @@ void mergeSort(vector<int>& arr, int l, int r) {
             }
     }
 ```
-BTC: O(nlogn);
-ATC: O(nlogn);
-WTC: O(nlogn);
-SC: O(n);
+BTC: O(nlogn);  
+ATC: O(nlogn);  
+WTC: O(nlogn);  
+SC: O(n);  
 
 
 Quick sort:
@@ -186,8 +186,8 @@ int partition(vector<int>& arr, int low, int high) {
         
     }
 ```
-BTC: O(nlogn);
-ATC: O(nlogn);
-WTC: O(n^2);
-ASC: O(logn); [Average recursion stack]
-WSC: O(n); [When pivot is always smallest or largest (unbalanced partitions)]
+BTC: O(nlogn);  
+ATC: O(nlogn);  
+WTC: O(n^2);  
+ASC: O(logn); [Average recursion stack]  
+WSC: O(n); [When pivot is always smallest or largest (unbalanced partitions)]  
