@@ -73,8 +73,8 @@ void insertionSort(vector<int>& arr) {
             arr[j+1]=key;
         }
     }
-    ```
-    
+```
+
 Merge Sort:
 ```cpp
 void mergeSort(vector<int>& arr, int l, int r) {
