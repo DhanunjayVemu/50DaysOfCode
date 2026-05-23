@@ -9,6 +9,7 @@
 - [Bubble sort](https://www.geeksforgeeks.org/problems/bubble-sort/1)
 - [Insertion sort](https://www.geeksforgeeks.org/problems/insertion-sort/1)
 - [Merge sort](https://www.geeksforgeeks.org/problems/merge-sort/1)
+- [Quick sort](https://www.geeksforgeeks.org/problems/quick-sort/1)
 
 ####  C++ Code
 Selection Sort:
