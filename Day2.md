@@ -5,10 +5,35 @@
 ---
 
 ##  DSA Questions Solved
+- [Second largest element](https://www.geeksforgeeks.org/problems/second-largest3735/1)
 - [Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/)
 - [Remove Duplicates from sorted array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 
 ####  C++ Code
+
+Second largest Element:
+
+```cpp
+int getSecondLargest(vector<int> &arr) {
+        int max1=INT_MIN;
+        int max2=INT_MIN;
+        
+        for(int x: arr){
+            if(x>max1) {
+                max2=max1;
+                max1=x;
+            }
+            else{
+                if(x>max2 && x!=max1){
+                    max2=x;
+                }
+            }
+        }
+        if(max2==INT_MIN) return -1;
+
+        return max2;
+    }
+```
 
 [Check if array is sorted and rotated]
 Here, I counted the number of times there is a drop in order in the given array. If it is greater than 1, then the array is not sorted and rotated.
