@@ -6,7 +6,7 @@
 
 ##  DSA Questions Solved
 - [Floor in a sorted array](https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1)
-- [Ceil in a sorted array]()
+- [Ceil in a sorted array](https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1)
 
 ####  C++ Code
 [Floor in a sorted array] - Floor of a number is the largest number lesser than that number in the array. 
