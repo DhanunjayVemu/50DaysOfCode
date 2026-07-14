@@ -12,6 +12,7 @@
 ### C++ Code 
 
 Remove Nth Node From End of List
+Brute:
 ```cpp
 ListNode* removeNthFromEnd(ListNode* head, int n) {
         
@@ -45,6 +46,36 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
         }
 
         prev->next=temp->next;
+        delete temp;
+        return head;
+
+    }
+```
+
+Optimal:
+
+```cpp
+ ListNode* removeNthFromEnd(ListNode* head, int n) {
+        
+        ListNode* fast = head;
+
+        for(int i=0;i<n;i++){
+            fast=fast->next;
+        }
+        if(fast==nullptr) {
+            ListNode* temp=head->next;
+            delete head;
+            return temp;
+        }
+
+        ListNode* slow=head;
+        while(fast->next!=nullptr){
+            fast=fast->next;
+            slow=slow->next;
+        }
+
+        ListNode* temp=slow->next;
+        slow->next=slow->next->next;
         delete temp;
         return head;
 
