@@ -84,6 +84,8 @@ public:
 
 Binary Tree Right Side View:
 Using BFS:
+TC: O(N)
+SC: O(N)
 ```cpp
     vector<int> rightSideView(TreeNode* root) {
         if (root == nullptr) return {};
@@ -115,3 +117,23 @@ Using BFS:
 ```
 
 Using DFS (Optimal):
+TC: O(N)
+SC: O(H) {Height of the tree}
+```cpp
+   class Solution {
+public:
+
+    void rightview(TreeNode* node, int level, vector<int>&ans){
+        if(node==nullptr) return;
+        if(ans.size()==level) ans.push_back(node->val);
+        rightview(node->right, level+1, ans);
+        rightview(node->left, level+1, ans);
+    }
+
+    vector<int> rightSideView(TreeNode* root) {   //level order soln in github
+        vector<int> ans;
+       rightview(root, 0, ans);
+        return ans;
+    }
+};
+```
